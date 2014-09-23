@@ -1,0 +1,11 @@
+<h1>page1 {{name}}</h1>
+<ul>
+   <li ng-repeat='item in items'>{{item}}</li>
+</ul>
+<div ng-controller="barChartController" >
+	{{names}}
+  <ng-include data-src="'js/components/barChart/partials/barChartComponent.html'"></ng-include>
+</div>
+<div ng-controller="navigationBarController" >
+  <ng-include data-src="'js/components/navigationBar/partials/navigationBarComponent.html'"></ng-include>
+</div>
