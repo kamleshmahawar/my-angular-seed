@@ -1,0 +1,10 @@
+pipeline {
+   stages {
+      stage('build') {
+         sh 'npm run build';
+      }
+      stage('test') {
+         sh 'npm run test'
+      }
+   }
+}
